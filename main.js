@@ -17,6 +17,7 @@ function loadWeatherGrid(report){
         error.classList.add("error");
         error.append("Could not find the city.");
         document.getElementById("weatherGrid").innerHTML = error.outerHTML;
+        return;
     }
     var grid = document.createElement("div");
     grid.classList.add("grid");
