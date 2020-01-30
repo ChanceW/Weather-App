@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather App</title>
+		<script src="main.js"></script>
+		<script src="Weatherfetcher.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<h1>Today's Weather</h1>
+		<div class="body">
+			<input id="txtCity" onkeyup="submit(event)" type="text" />
+			<button onclick="loadWeather()">Get Weather</button>
+			<div class="exp">ex: <q>Atlanta</q> or <q>Atlanta,us</q></div>
+			<div id="weatherGrid"></div>
+		</div>
+	</body>
+</html>
